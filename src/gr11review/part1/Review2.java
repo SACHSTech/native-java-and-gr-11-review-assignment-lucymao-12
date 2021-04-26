@@ -8,7 +8,7 @@ public class Review2{
 
     String strJoke = "";
 
-    System.out.println("0 - print an joke about your hair");
+    System.out.println("0 - print a joke about your hair");
     System.out.println("1 - print a joke about your feet");
     System.out.println("2 - print a joke about your clothes"); 
     System.out.println("3 - print a joke about your teacher");
@@ -17,11 +17,13 @@ public class Review2{
     int intChoice = Integer.parseInt(keyboard.readLine());
 
     switch (intChoice){
-      case 1: strJoke = "What do you call Italian cheese with curly hair? Perm-esan.";
+      case 0: strJoke = "What do you call Italian cheese with curly hair? Perm-esan.";
       break;
-      case 2: strJoke = "My boyfriend told me to stop acting like a flamingo. So I had to put my foot down.";
+      case 1: strJoke = "My boyfriend told me to stop acting like a flamingo. So I had to put my foot down.";
       break;
-      case 3: strJoke = "What is DNA’s favourite piece of clothing? Jeans";
+      case 2: strJoke = "What is DNA’s favourite piece of clothing? Jeans";
+      break;
+      case 3: strJoke = "What's a Teacher's Favorite Nation Expla-nation.";
       break;
       default: strJoke = "Invalid menu option";
       break;
