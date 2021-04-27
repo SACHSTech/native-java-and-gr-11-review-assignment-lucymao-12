@@ -24,8 +24,8 @@ public class Review4{
       dblTotal += dblPrice; 
 
     }
-    System.out.println(decimalformat.format("Subtotal: " + dblTotal));
-    System.out.println(decimalformat.format("Tax: " + dblTotal * 0.13));
-    System.out.println(decimalformat.format("Total: " + dblTotal + (dblTotal * 0.13)));
+    System.out.println(decimalformat.format("Subtotal: $" + dblTotal));
+    System.out.println(decimalformat.format("Tax: $" + dblTotal * 0.13));
+    System.out.println(decimalformat.format("Total: $" + dblTotal + (dblTotal * 0.13)));
   }
 }
