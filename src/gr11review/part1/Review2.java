@@ -6,8 +6,10 @@ public class Review2{
     
     BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
 
+    // set a string value for choice of joke
     String strJoke = "";
 
+    // show user choices of jokes and take in their input
     System.out.println("0 - print a joke about your hair");
     System.out.println("1 - print a joke about your feet");
     System.out.println("2 - print a joke about your clothes"); 
@@ -16,6 +18,7 @@ public class Review2{
 
     int intChoice = Integer.parseInt(keyboard.readLine());
 
+    // add the different cases depending on the value the user has submitted, set the strJoke to that value
     switch (intChoice){
       case 0: strJoke = "What do you call Italian cheese with curly hair? Perm-esan.";
       break;
@@ -28,6 +31,7 @@ public class Review2{
       default: strJoke = "Invalid menu option";
       break;
     }
+    // print out the joke
     System.out.println(strJoke);
   }
 }

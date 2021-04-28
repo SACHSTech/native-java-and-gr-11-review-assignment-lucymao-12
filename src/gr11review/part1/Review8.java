@@ -24,7 +24,7 @@ public class Review8{
         s++;
       }
     }
-    // print out s after the loop has run
+    // print out s counter after the loop has run
     System.out.println(s);
   }
 }
