@@ -22,8 +22,8 @@ public class Review4{
     /* with a for loop, continue running until the user has inputted the price of all the items
     * add the price of the item to the total price each time
     */
-    for(int i = 0; i<intItems; i++){
-      System.out.print("Enter price for item " + intItems + ": ");
+    for(int i = 1; i<intItems+1; i++){
+      System.out.print("Enter the price for item " + i + ": ");
 
       dblPrice = Double.parseDouble(keyboard.readLine());
 
@@ -32,8 +32,8 @@ public class Review4{
     }
 
     // output the total price, tax (total price * .13) and the total price plus tax
-    System.out.println(decimalformat.format("Subtotal: $" + dblTotal));
-    System.out.println(decimalformat.format("Tax: $" + dblTotal * 0.13));
-    System.out.println(decimalformat.format("Total: $" + dblTotal + (dblTotal * 0.13)));
+    System.out.println(("Subtotal: $") + decimalformat.format(dblTotal));
+    System.out.println(("Tax: $") + decimalformat.format(dblTotal * 0.13));
+    System.out.println(("Total: $") + decimalformat.format(dblTotal + (dblTotal * 0.13)));
   }
 }
